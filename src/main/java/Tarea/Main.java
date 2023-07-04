@@ -1,9 +1,15 @@
 package Tarea;
 
+import Tarea.Excepciones.ArithmeticException;
+import Tarea.Excepciones.ArrayIndexOutOfBounds;
+import Tarea.Excepciones.FileNotFoundException;
+import Tarea.MetodosYarchivo.Archivo;
+import Tarea.MetodosYarchivo.Ejercicios;
+
 import java.io.*;
 
 public class Main {
-    public static void main(String[] args) throws ArithmeticException, ArrayIndexOutOfBounds,FileNotFoundException {
+    public static void main(String[] args) throws ArithmeticException, ArrayIndexOutOfBounds, FileNotFoundException {
 
         Ejercicios excepciones = new Ejercicios();
         Archivo archivo = new Archivo();
@@ -33,9 +39,9 @@ public class Main {
             bufferEscritor.write(archivo.getContenido());
 
             // Cerrar el BufferedWriter
-//            bufferEscritor.close();
-//
-//            System.out.println("El archivo se creó exitosamente.");
+            bufferEscritor.close();
+
+            System.out.println("El archivo se creó exitosamente.");
 
         } catch (IOException e) {
             System.out.println("Ocurrió un error al crear el archivo: " + e.getMessage());

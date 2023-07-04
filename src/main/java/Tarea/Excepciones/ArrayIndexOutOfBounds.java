@@ -1,4 +1,4 @@
-package Tarea;
+package Tarea.Excepciones;
 
 public class ArrayIndexOutOfBounds extends Exception{
 

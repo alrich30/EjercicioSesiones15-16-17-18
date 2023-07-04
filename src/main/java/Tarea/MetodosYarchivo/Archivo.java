@@ -1,6 +1,7 @@
-package Tarea;
+package Tarea.MetodosYarchivo;
 
-import java.io.*;
+import Tarea.Excepciones.FileNotFoundException;
+
 import java.util.Objects;
 
 public class Archivo {

@@ -1,10 +1,7 @@
-package Tarea;
+package Tarea.MetodosYarchivo;
 
-import java.io.File;
-import java.io.FileWriter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import Tarea.Excepciones.ArithmeticException;
+import Tarea.Excepciones.ArrayIndexOutOfBounds;
 
 public class Ejercicios {
 
@@ -19,7 +16,7 @@ public class Ejercicios {
         this.resultado = resultado;
     }
 
-    public int divideEntreCero(int dividendo, int divisor)throws ArithmeticException{
+    public int divideEntreCero(int dividendo, int divisor)throws ArithmeticException {
 
         int resultado = 0;
         try {
@@ -31,7 +28,7 @@ public class Ejercicios {
         return resultado;
     }
 
-    public boolean obtenerNumeros (int numberInArray) throws ArrayIndexOutOfBounds{
+    public boolean obtenerNumeros (int numberInArray) throws ArrayIndexOutOfBounds {
 
 
         int[] array = {1,2,3,4,5,6};
